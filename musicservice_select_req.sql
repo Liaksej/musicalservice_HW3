@@ -7,7 +7,7 @@ SELECT name, release_year
 -- Запрос названия и продолжительности самого длительного трека:
 SELECT name, length
   FROM tracks
- WHERE length  = (SELECT MAX(length)
+ WHERE length = (SELECT MAX(length)
                     FROM tracks);
 
 -- Запрос названия треков, продолжительность которых не менее 3,5 минуты:
